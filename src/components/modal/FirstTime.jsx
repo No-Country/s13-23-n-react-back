@@ -3,8 +3,8 @@ import React from 'react';
 export default function firstTime() {
 	return (
 		<section className=' pt-[152px] bg-primary px-[60px] pb-[174px]'>
-			<div className=' flex justify-center'>
-				<img className='' src='/images/logo-vert 1.png' alt='First Time Logo' />
+			<div className='flex justify-center '>
+				<img className='' src='images/logo-vert 1.png' alt='First Time Logo' />
 			</div>
 
 			<div className='mt-[68px]'>
