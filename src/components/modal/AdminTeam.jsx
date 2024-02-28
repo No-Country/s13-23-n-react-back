@@ -1,9 +1,22 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 const Equipo = ({ nombre, logo }) => (
-	<div className='equipo'>
-		<img src={logo} alt={`Logo de ${nombre}`} />
-		<p>{nombre}</p>
+	<div className='w-full mt-10 bg-secondary px-[20px] py-4 rounded-2xl flex justify-between'>
+		<div className='flex items-center gap-[10px]'>
+			<img src={logo} alt={`Logo de ${nombre}`} />
+			<p className=' font-SourceSansPro text-[20px] leading-[29.208px]'>
+				{nombre}
+			</p>
+		</div>
+
+		<div className='flex gap-7'>
+			<button>
+				<img src='images/addPlayerIcon.png' alt=' Add Player Icon' />
+			</button>
+			<button>
+				<img src='images/deletePlayerIcon.png' alt=' Delete Player Icon' />
+			</button>
+		</div>
 	</div>
 );
 
@@ -19,30 +32,53 @@ const EquipoForm = ({ onSubmit }) => {
 	};
 
 	return (
-		<form onSubmit={handleSubmit}>
-			<h2>Nuevo Equipo</h2>
-			<input
-				type='text'
-				placeholder='Nombre del equipo'
-				value={nombre}
-				onChange={e => setNombre(e.target.value)}
-				required
-			/>
-			<input
-				type='url'
-				placeholder='URL del logo'
-				value={logo}
-				onChange={e => setLogo(e.target.value)}
-				required
-			/>
-			<button type='submit'>Crear Equipo</button>
+		<form
+			className='flex flex-col justify-center mt-8 px-[30px]'
+			onSubmit={handleSubmit}
+		>
+			<h2 className=' font-Roboto font-bold text-[22px] leading-[26.4px]'>
+				Nuevo Equipo
+			</h2>
+			<div className='flex flex-col-reverse gap-3 mt-[39px]'>
+				<input
+					className='w-full  bg-secondary h-[60px] rounded-2xl placeholder:font-SourceSansPro placeholder:text-neutral pl-[36.28px] focus:placeholder:text-neutral focus:placeholder:font-SourceSansPro'
+					type='text'
+					placeholder='Nombre del equipo'
+					value={nombre}
+					onChange={e => setNombre(e.target.value)}
+					required
+				/>
+
+				<div className='flex justify-center w-full'>
+					<input
+						accept='image/*'
+						className='sr-only'
+						id='team-logo'
+						type='file'
+					/>
+					<label
+						className='flex flex-col items-center cursor-pointer'
+						htmlFor='team-logo'
+					>
+						<img src='images/addTeamLogo.png' alt='Add Team Image' />
+					</label>
+				</div>
+			</div>
+			<button
+				className=' bg-accent w-[260px] py-3 rounded-2xl mt-[37px] mx-auto'
+				type='submit'
+			>
+				Crear Equipo
+			</button>
 		</form>
 	);
 };
 
 const EquiposList = ({ equipos }) => (
-	<div>
-		<h2>Equipos creados</h2>
+	<div className=' px-[30px]'>
+		<h2 className=' font-Roboto font-bold text-[22px] leading-[26.4px]'>
+			Equipos creados
+		</h2>
 		<div className='equipos-list'>
 			{equipos.map((equipo, index) => (
 				<Equipo key={index} nombre={equipo.nombre} logo={equipo.logo} />
@@ -65,8 +101,16 @@ export default function AdminTeam() {
 				<h1 className='text-xl font-semibold font-Roboto'>Copa Las Condes</h1>
 			</div>
 
-			<h2>Administrar Equipos</h2>
+			<hr className='border-[#545458] mt-[17px]' />
+
+			<div className=' px-[30px] mt-8'>
+				<h2 className=' font-Roboto font-bold text-[32px] leading-[38.4px]'>
+					Administrar Equipos
+				</h2>
+			</div>
+
 			<EquipoForm onSubmit={handleEquipoSubmit} />
+			<hr className='border-[#545458] mt-[66px] mb-[47.5px]' />
 			<EquiposList equipos={equipos} />
 		</section>
 	);
