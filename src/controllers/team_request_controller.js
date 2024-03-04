@@ -1,0 +1,54 @@
+import TeamRequest from '../models/team_request.js';
+
+const teamRequestController = {
+    createTeamRequest: async (req, res) => {
+        try {
+            const { user_id, team_id } = req.body;
+            const createdRequest = await TeamRequest.createTeamRequest({
+                user_id,
+                team_id,
+            });
+            res.status(201).json({
+                message: 'Solicitud de equipo creada exitosamente',
+                request: createdRequest,
+            });
+        } catch (error) {
+            console.error(error);
+            res.status(500).json({
+                message: 'Error al crear la solicitud de equipo',
+            });
+        }
+    },
+
+    getAllTeamRequests: async (req, res) => {
+        try {
+            const requests = await TeamRequest.getAllTeamRequests();
+            res.status(200).json(requests);
+        } catch (error) {
+            console.error(error);
+            res.status(500).json({
+                message: 'Error al obtener las solicitudes de equipo',
+            });
+        }
+    },
+
+    getTeamRequestById: async (req, res) => {
+        try {
+            const { id } = req.params;
+            const request = await TeamRequest.getTeamRequestById(id);
+            if (!request) {
+                res.status(404).json({
+                    message: 'Solicitud de equipo no encontrada',
+                });
+            } else {
+                res.status(200).json(request);
+            }
+        } catch (error) {
+            console.error(error);
+            res.status(500).json({
+                message: 'Error al obtener la solicitud de equipo',
+            });
+        }
+    },
+};
+export default teamRequestController;

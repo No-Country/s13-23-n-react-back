@@ -7,7 +7,7 @@ import PlayerRoutes from './routes/player.routes.js';
 import TournamentRoutes from './routes/tournament.routes.js';
 import GameRoutes from './routes/games.routes.js';
 import fileUpload from 'express-fileupload';
-
+import teamRequestRoutes from './routes/team_requests.routes.js';
 const app = express();
 
 // ver logs de las peticiones
@@ -38,16 +38,16 @@ app.use(
 
 // Rutas de nuestra aplicación
 app.use('/api/auth', AuthRoutes);
+app.use('/api/teams', teamRoutes);
 app.use('/api/players', PlayerRoutes);
 app.use('/api/tournament', TournamentRoutes);
 app.use('/api/games', GameRoutes);
+app.use('/api/team-requests', teamRequestRoutes);
 app.get('/', (req, res) => {
     res.json({
         message: 'Welcome to my application',
     });
 });
-
-app.use('/api/teams', teamRoutes);
 
 app.listen(3000, () => {
     console.log('Server on port 3000');
