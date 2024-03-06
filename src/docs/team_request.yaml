@@ -1,0 +1,133 @@
+TeamRequest:
+    type: object
+    properties:
+        id:
+            type: number
+            description: Identificador único de la solicitud de equipo
+        user_id:
+            type: number
+            description: ID del usuario que realiza la solicitud
+        team_id:
+            type: number
+            description: ID del equipo al que se solicita unirse
+        status:
+            type: string
+            enum: ['pending', 'accepted', 'rejected']
+            description: Estado de la solicitud de equipo
+    required:
+        - user_id
+        - team_id
+        - status
+
+Paths:
+    /api/team-requests/getAll/{user_id}:
+        get:
+            summary: Obtener todas las solicitudes de equipo
+            responses:
+                '200':
+                    description: OK
+                    content:
+                        application/json:
+                            schema:
+                                type: array
+                                items:
+                                    $ref: '#/components/schemas/TeamRequest'
+        post:
+            /api/team-requests/create:
+            summary: Crear una nueva solicitud de equipo
+            requestBody:
+                required: true
+                content:
+                    application/json:
+                        schema:
+                            $ref: '#/components/schemas/TeamRequest'
+            responses:
+                '201':
+                    description: Created
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/TeamRequest'
+                '400':
+                    description: Bad request
+       
+            get:
+            /api/team-requests/{id}:    
+              summary: Obtener una solicitud de equipo por su ID
+                parameters:
+                    - in: path
+                      name: id
+                      required: true
+                      description: ID de la solicitud de equipo a obtener
+                      schema:
+                          type: number
+                responses:
+                    '200':
+                        description: OK
+                        content:
+                            application/json:
+                                schema:
+                                    $ref: '#/components/schemas/TeamRequest'
+                    '404':
+                        description: Not found
+            put:
+                /api/team-requests/updateStatus/{id}:
+                    summary: Actualizar el estado de una solicitud de equipo por su ID
+                    parameters:
+                        - in: path
+                          name: id
+                          required: true
+                          description: ID de la solicitud de equipo a actualizar
+                          schema:
+                              type: number
+                    requestBody:
+                        required: true
+                        content:
+                            application/json:
+                                schema:
+                                    type: object
+                                    properties:
+                                        status:
+                                            type: string
+                                            enum:
+                                                [
+                                                    'pending',
+                                                    'accepted',
+                                                    'rejected',
+                                                ]
+                    responses:
+                        '200':
+                            description: OK
+                            content:
+                                application/json:
+                                    schema:
+                                        $ref: '#/components/schemas/TeamRequest'
+                        '400':
+                            description: Bad request
+                        '404':
+                            description: Not found
+                        '500':
+                            description: Internal server error
+
+components:
+    schemas:
+        TeamRequest:
+            type: object
+            properties:
+                id:
+                    type: number
+                    description: Identificador único de la solicitud de equipo
+                user_id:
+                    type: number
+                    description: ID del usuario que realiza la solicitud
+                team_id:
+                    type: number
+                    description: ID del equipo al que se solicita unirse
+                status:
+                    type: string
+                    enum: ['pending', 'accepted', 'rejected']
+                    description: Estado de la solicitud de equipo
+            required:
+                - user_id
+                - team_id
+                - status

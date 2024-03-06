@@ -41,8 +41,9 @@ app.use('/api/auth', AuthRoutes);
 app.use('/api/teams', teamRoutes);
 app.use('/api/players', PlayerRoutes);
 app.use('/api/tournament', TournamentRoutes);
-app.use('/api/games', GameRoutes);
 app.use('/api/team-requests', teamRequestRoutes);
+app.use('/api/games', GameRoutes);
+
 app.get('/', (req, res) => {
     res.json({
         message: 'Welcome to my application',

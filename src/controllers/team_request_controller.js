@@ -50,5 +50,48 @@ const teamRequestController = {
             });
         }
     },
+
+    updateTeamRequestStatus: async (req, res) => {
+        try {
+            const { id } = req.params;
+            const { status } = req.body;
+
+            if (!id || !status) {
+                return res.status(400).json({
+                    message:
+                        'Se requieren tanto el ID como el estado para actualizar la solicitud de equipo.',
+                });
+            }
+
+            const updatedRequest = await TeamRequest.updateTeamRequestStatus(
+                id,
+                status,
+            );
+
+            if (!updatedRequest) {
+                return res.status(404).json({
+                    message: 'Solicitud de equipo no encontrada.',
+                });
+            } else if (updatedRequest.affectedRows === 0) {
+                return res.status(500).json({
+                    message:
+                        'No se pudo actualizar el estado de la solicitud de equipo.',
+                });
+            } else {
+                return res.status(200).json({
+                    message:
+                        'Estado de la solicitud de equipo actualizado exitosamente.',
+                    updatedRequest,
+                });
+            }
+        } catch (error) {
+            console.error(error);
+            res.status(500).json({
+                message:
+                    'Error al actualizar el estado de la solicitud de equipo.',
+            });
+        }
+    },
 };
+
 export default teamRequestController;

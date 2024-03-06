@@ -48,4 +48,22 @@ TeamRequest.getTeamRequestById = async (requestId) => {
     }
 };
 
+// Actualiza el estado de una solicitud de equipo
+TeamRequest.updateTeamRequestStatus = async (requestId, status) => {
+    try {
+        const [results] = await connection.query(
+            'UPDATE team_requests SET status = ? WHERE id = ?',
+            [status, requestId],
+        );
+
+        if (results.affectedRows === 0) {
+            return null;
+        }
+
+        return { id: requestId, status };
+    } catch (error) {
+        console.error(error);
+        throw error;
+    }
+};
 export default TeamRequest;
