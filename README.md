@@ -72,9 +72,10 @@ Nuestra aplicación te brinda la posibilidad de controlar cada aspecto de tus to
 
 <h3>Back-End</h3>
 
-![Cloudinary](https://img.shields.io/badge/cloudinary-3448C5?style=for-the-badge)
+![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
 ![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
 ![JWT](https://img.shields.io/badge/JWT-black?style=for-the-badge&logo=JSON%20web%20tokens)
+![Cloudinary](https://img.shields.io/badge/cloudinary-3448C5?style=for-the-badge)
 ![Swagger](https://img.shields.io/badge/-Swagger-%23Clojure?style=for-the-badge&logo=swagger&logoColor=white)
 
 
@@ -243,7 +244,7 @@ Al explorar la plataforma, descubrirás una variedad de funciones básicas que t
           <img width="110" src="https://media.licdn.com/dms/image/D4E35AQH_xfaXd76nXQ/profile-framedphoto-shrink_200_200/0/1707694830011?e=1710381600&v=beta&t=c3TL8RaJwd4g2VhRiYb41Wl1c1LPSyAoMBLaoeogi6U"/>
         </a>
         <a href="https://github.com/valec3" target="_blank" rel="author">
-          <h4 style="margin-top: 1rem;">Victor Maye</br><small>Front-End</small></h4>
+          <h4 style="margin-top: 1rem;">Victor Maye</br><small>Back-End</small></h4>
         </a>
         <div style='display: flex; flex-direction: column'>
         <a href="https://github.com/valec3" target="_blank">
