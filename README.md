@@ -1,4 +1,4 @@
-<div style='center; padding: 10px;'  >
+<div align='center' style='padding: 10px;'>
 
 <h1>README BACK</h1>
 
@@ -15,50 +15,55 @@ Este es el backend del proyecto SportPlay, una aplicación web desarrollada en E
 
 <br>
 
-1. Asegúrate de tener Node.js y npm instalado en tu sistema.
-2. Clona este repositorio desde la rama 'dev-back':
+<div align='left' style='padding: 0 40px' >
 
-```
-git clone https://github.com/No-Country/s13-23-n-react-back/tree/dev-back
-```
-3. Asegúrate de encontrarte en la rama back-end:
-```
-git branch
-```
-  De no estar en la rama, posiciónate en ella:
-```
-git checkout back-end
-```
-4. Crea un archivo .env y solcita las claves necesarias para configurar el archivo, este es un ejemplo:
-```
-DATABASE_HOST = "HOST"
-DATABASE_USER = "USER"
-DATABASE_PASSWORD = "PASSWORD"
-DATABASE_NAME = "DATABASE"
-DATABASE_PORT = 31366
-PORT = 3100
-SECRET = "SECRET"
+  1. Asegúrate de tener Node.js y npm instalado en tu sistema.
+  2. Clona este repositorio desde la rama 'dev-back':
+  ```
+  git clone https://github.com/No-Country/s13-23-n-react-back/tree/dev-back
+  ```
+  3. Asegúrate de encontrarte en la rama back-end:
+  ```
+  git branch
+  ```
+    De no estar en la rama, posiciónate en ella:
+  ```
+  git checkout back-end
+  ```
+  4. Crea un archivo .env y solcita las claves necesarias para configurar el archivo, este es un ejemplo:
+  ```
+  DATABASE_HOST = "HOST"
+  DATABASE_USER = "USER"
+  DATABASE_PASSWORD = "PASSWORD"
+  DATABASE_NAME = "DATABASE"
+  DATABASE_PORT = 31366
+  PORT = 3100
+  SECRET = "SECRET"
 
-CLOUD_NAME = "NAME"
-API_KEY = "API_KEY"
-API_SECRET = "API_SECRET"
-```
-Asegúrate de ajustar los valores según tu entorno.
-5. Instala las dependencias:
-```
-npm install
-```
+  CLOUD_NAME = "NAME"
+  API_KEY = "API_KEY"
+  API_SECRET = "API_SECRET"
+  ```
+  Asegúrate de ajustar los valores según tu entorno.
+  5. Instala las dependencias:
+  ```
+  npm install
+  ```
+</div>
 
 <br> 
 
 ### USO
 
-Para iniciar el servidor, ejecuta el siguiente comando:
-```
-npm run dev
-```
-El servidor estará escuchando en el puerto especificado en el archivo '.env'.
+<div align='left' style='padding: 0 40px' >
 
+  Para iniciar el servidor, ejecuta el siguiente comando:
+  ```
+  npm run dev
+  ```
+  El servidor estará escuchando en el puerto especificado en el archivo '.env'.
+
+</div>
 
 <br> 
 
