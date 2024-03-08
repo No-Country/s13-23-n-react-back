@@ -65,7 +65,6 @@ Nuestra aplicación te brinda la posibilidad de controlar cada aspecto de tus to
 ![DaisyUI](https://img.shields.io/badge/daisyui-5A0EF8?style=for-the-badge&logo=daisyui&logoColor=white)
 ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
 ![Formik](https://img.shields.io/badge/FORMIK-172B4D?style=for-the-badge)
-![Vercel](https://img.shields.io/static/v1?style=for-the-badge&message=Vercel&color=000000&logo=Vercel&logoColor=FFFFFF&label=)
 
 <h3>Back-End</h3>
 
