@@ -1,16 +1,13 @@
-<div style="background-color: #1F2937; color: #FFFFFF; padding: 10px;">
+<div style=" padding: 10px;">
 
 <!-- PROJECT LOGO -->
 <br />
   <div align='center'>
   <a href="https://github.com/No-Country/s13-23-n-react-back" target="_blank">
-    <img src="https://res.cloudinary.com/dy7ncwtov/image/upload/v1709777025/sports-db/eubzu3o93qkgjgdfgz7y.png" alt="Banner"> 
+    <img style='width: 13rem' src="https://res.cloudinary.com/dy7ncwtov/image/upload/v1709910654/sports-db/Logos/iltwxj1jz1byfejpxajb.png" alt="Banner"> 
   </a>
   
-<div style="display: flex; align-items: center; justify-content: center;">
-  <img style="width: 11rem; margin-right: 0.5em;" src="https://res.cloudinary.com/dy7ncwtov/image/upload/v1709777245/sports-db/Logos/y4ajbpwfupecksfmgc3q.png" alt="">
-  <h3 style="padding-bottom: 0.5em;">les da la bienvenida</h3>
-</div>
+<h3>Les da la bienvenida</h3>
 
 
 
@@ -25,7 +22,7 @@
    <a href="https://tournament-sport.onrender.com/docs/" target="_blank" rel="noopener noreferrer">
           <img  src="https://img.shields.io/badge/VER_API-3378FF?style=for-the-badge&logo=swagger&logoColor=%23343B4E"/>
       </a>
-    <a href="https://www.figma.com/file/EF45TS3CQimLdPdlXpsKw1/Sportplay?type=design&node-id=0-1&mode=design&t=sGGfIjAyiyFf2QvN-0" target="_blank" rel="noopener noreferrer">
+    <a href="https://www.figma.com/file/EF45TS3CQimLdPdlXpsKw1/Sportplay?type=design&node-id=198%3A451&mode=design&t=syD1156uqURETpMS-1" target="_blank" rel="noopener noreferrer">
           <img  src="https://img.shields.io/badge/VER_DISE%C3%91O-3378FF?style=for-the-badge&logo=figma&logoColor=%23343B4E"/>
       </a>
       <a href="https://github.com/No-Country/s13-23-n-react-back/issues" target="_blank" rel="noopener noreferrer">
@@ -51,13 +48,13 @@ Acerca del Proyecto
 
 SportPlay es una completa plataforma de gestión de torneos de fútbol diseñada para satisfacer las necesidades de clubes y ligas locales. Esta innovadora herramienta ofrece una solución integral y accesible para facilitar la organización y administración de todos tus torneos.
 
-Con SportPlay, podrás crear torneos fácilmente, registrar equipos, asignar jugadores a cada equipo, gestionar los partidos de los torneos y mantener un registro detallado de los resultados de cada encuentro. Todo ello desde una interfaz intuitiva y fácil de usar.
+Con SportPlay, podrás crear torneos fácilmente, registrar equipos, asignar jugadores a cada equipo, gestionar los partidos de los torneos y mantener un registro detallado de los resultados de cada encuentro. Todo esto desde una interfaz intuitiva y fácil de usar.
 
 Nuestra aplicación te brinda la posibilidad de controlar cada aspecto de tus torneos de forma eficiente y generar informes detallados para analizar el desempeño de los equipos y jugadores.
 
 ¡Únete a SportPlay hoy mismo y lleva la gestión de tus torneos al siguiente nivel! Simplifica tus procesos, elimina la confusión y maximiza tu tiempo para disfrutar al máximo del fútbol.
 
-<h1> Tecnologias Usadas
+<h1> Tecnologías Utilizadas
 </h1>
 <h3>Front-End</h3>
 
@@ -72,26 +69,42 @@ Nuestra aplicación te brinda la posibilidad de controlar cada aspecto de tus to
 
 <h3>Back-End</h3>
 
-![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
 ![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
+![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
 ![JWT](https://img.shields.io/badge/JWT-black?style=for-the-badge&logo=JSON%20web%20tokens)
-![Cloudinary](https://img.shields.io/badge/cloudinary-3448C5?style=for-the-badge)
 ![Swagger](https://img.shields.io/badge/-Swagger-%23Clojure?style=for-the-badge&logo=swagger&logoColor=white)
-
+![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white) 
 
 
 <h3>Base de datos</h3>
 
 ![MySQL](https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white)
 
+<h3>DevOps</h3>
 
-<h1> Organización
-</h1>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/trello/trello-plain-wordmark.svg" alt="Logo" width="90" height="90">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Logo" width="60" height="60">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/slack/slack-original.svg" alt="Logo" width="60" height="60">
-<img src="https://img.icons8.com/color/480/discord-new-logo.png" alt="Logo" width="60" height="60">
-<img src="https://img.shields.io/badge/Miro-F7C922?style=for-the-badge&logo=Miro&logoColor=050036" alt="Logo" width="90" height="32" >
+![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
+![Cloudinary](https://img.shields.io/badge/cloudinary-3448C5?style=for-the-badge)
+![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)
+![Render](https://img.shields.io/badge/Render-%46E3B7.svg?style=for-the-badge&logo=render&logoColor=white)
+
+
+<h3> Organización</h3>
+
+![Trello](https://img.shields.io/badge/Trello-%23026AA7.svg?style=for-the-badge&logo=Trello&logoColor=white)
+![Slack](https://img.shields.io/badge/Slack-4A154B?style=for-the-badge&logo=slack&logoColor=white)
+![Discord](https://img.shields.io/badge/Discord-%235865F2.svg?style=for-the-badge&logo=discord&logoColor=white)
+![Miro](https://img.shields.io/badge/Miro-F7C922?style=for-the-badge&logo=Miro&logoColor=050036)
+
+<h3>Diseño UX/UI</h3>
+
+<div style='display: flex; align-items: center; justify-content: center;'>
+    <img style='width: 6.6rem' src="https://res.cloudinary.com/dy7ncwtov/image/upload/v1709911480/sports-db/Logos/n6dyg5fbvmf0kysz2wlt.png" alt="Macromedia Fireworks">
+    <img style='width: 9.2rem; height: 9.2rem; padding-top: .5rem' src="https://res.cloudinary.com/dy7ncwtov/image/upload/v1709916004/sports-db/Logos/d0i8sy3mcofkk7io3kyf.png" alt="Adobe Ilustrator">
+    <img style='width: 6rem; height: 6rem;' src="https://res.cloudinary.com/dy7ncwtov/image/upload/v1709916894/sports-db/Logos/qe2j3udmexnlbvivehuq.png" alt="Procreate">
+    <img style='height: 5rem; padding: .5rem 2.1rem' src="https://res.cloudinary.com/dy7ncwtov/image/upload/v1709917123/sports-db/Logos/f3n4kcoethxcvlrj57vg.png" alt="Figma">
+</div>
+
 
 <h1> Comenzando
 </h1>
@@ -150,7 +163,7 @@ Al explorar la plataforma, descubrirás una variedad de funciones básicas que t
           <img width="110" src="https://github.com/georgiethnasser.png"/>
         </a>
         <a href="https://github.com/georgiethnasser" target="_blank" rel="author">
-          <h4 style="margin-top: 1rem;">Georgieth Nasser</br><small>Front-End UX/UI</small></h4>
+          <h4 style="margin-top: 1rem;">Georgieth Nasser</br><small>UX/UI</small></h4>
         </a>
         <div style='display: flex; flex-direction: column'>
         <a href="https://github.com/georgiethnasser" target="_blank">
