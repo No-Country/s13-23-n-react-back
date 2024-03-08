@@ -44,7 +44,7 @@ Este es el backend del proyecto SportPlay, una aplicación web desarrollada en E
   API_KEY = "API_KEY"
   API_SECRET = "API_SECRET"
   ```
-  Asegúrate de ajustar los valores según tu entorno.
+  Asegúrate de ajustar los valores según tu entorno. <br>
   5. Instala las dependencias:
   ```
   npm install
