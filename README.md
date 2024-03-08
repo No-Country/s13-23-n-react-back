@@ -99,10 +99,10 @@ Nuestra aplicación te brinda la posibilidad de controlar cada aspecto de tus to
 <h3>Diseño UX/UI</h3>
 
 <div style='display: flex; align-items: center; justify-content: center;'>
-    <img style='width: 6.6rem' src="https://res.cloudinary.com/dy7ncwtov/image/upload/v1709911480/sports-db/Logos/n6dyg5fbvmf0kysz2wlt.png" alt="Macromedia Fireworks">
-    <img style='width: 9.2rem; height: 9.2rem; padding-top: .5rem' src="https://res.cloudinary.com/dy7ncwtov/image/upload/v1709916004/sports-db/Logos/d0i8sy3mcofkk7io3kyf.png" alt="Adobe Ilustrator">
-    <img style='width: 6rem; height: 6rem;' src="https://res.cloudinary.com/dy7ncwtov/image/upload/v1709916894/sports-db/Logos/qe2j3udmexnlbvivehuq.png" alt="Procreate">
-    <img style='height: 5rem; padding: .5rem 2.1rem' src="https://res.cloudinary.com/dy7ncwtov/image/upload/v1709917123/sports-db/Logos/f3n4kcoethxcvlrj57vg.png" alt="Figma">
+    <img style='width: 4rem' src="https://res.cloudinary.com/dy7ncwtov/image/upload/v1709911480/sports-db/Logos/n6dyg5fbvmf0kysz2wlt.png" alt="Macromedia Fireworks">
+    <img style='width: 4rem; height: 4rem; padding-top: .5rem' src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Adobe_Illustrator_CC_icon.svg/1200px-Adobe_Illustrator_CC_icon.svg.png" alt="Adobe Ilustrator">
+    <img style='width: 4rem; height: 4rem;' src="https://res.cloudinary.com/dy7ncwtov/image/upload/v1709916894/sports-db/Logos/qe2j3udmexnlbvivehuq.png" alt="Procreate">
+    <img style='height: 48px;' src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Figma-logo.svg/1667px-Figma-logo.svg.png" alt="Figma">
 </div>
 
 
